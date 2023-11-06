@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A web application to show photos of penguins" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Aditya Pradita" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoviesConnect</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/31087.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="header" id="myHeader">
+      <span class="mobile">
+        <img src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg" alt="Hamburger Icon" />
+      </span>
+      <span class="relative-container">
+        <img src="./assets/31087.png" alt="MovieConnect Icon" />
+        <b>MoviesConnect</b>
+        <!-- <span class="circle-red">99+</span> -->
+      </span>
+
+      <ul class="desktop">
+        <li><a href="#headers">Home</a></li>
+        <li><a href="#know-more">My Recommend</a></li>
+        <li><a href="#form-section">Join Us</a></li>
+      </ul>
+    </nav>
+    <header class="full-screen" id="headers">
+      <h1>Movies Connect</h1>
+      <p>Discover a World of Cinematic Excellence Where Every Frame Tells a Story</p>
+    </header>
+    <section id="top-movies">
+      <div>
+        <h2>Top Movies</h2>
+      </div>
+      <div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <a href="https://www.linkedin.com/in/rizkialdiansyah/" target="_blank"><img src="./assets/1 father.jpeg" alt="The Godfather" /></a>
+              <h3>The Godfather</h3>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="https://www.linkedin.com/in/rizkialdiansyah/" target="_blank"><img src="./assets/darknight.jpeg" alt="The Dark Knight" /></a>
+              <h3>The Dark Knight</h3>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="https://www.linkedin.com/in/rizkialdiansyah/" target="_blank"
+                ><img src="./assets/shawsank.jpeg" alt="The Shawshank Redemption"
+              /></a>
+              <h3>The Shawshank Redemption</h3>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <a href="https://www.linkedin.com/in/rizkialdiansyah/" target="_blank"
+                ><img src="./assets/2 father.jpeg" alt="The Godfather Part II"
+              /></a>
+              <h3>The Godfather Part II</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <h2>My Favorite Series</h2>
+      <section>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./assets/friends.jpeg" />
+            <div class="text">Friends</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./assets/modern family.webp" />
+            <div class="text">Modern Family</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./assets/young sheldon.jpeg" />
+            <div class="text">Young Sheldon</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+      <!-- <section id="penguin-photos">
+        <h2>Penguin Photos</h2>
+        <div class="grid-container">
+          <div id="item-1">
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209615920-bfc74aac-b857-454b-b091-fa8857f8c40d.jpg"
+              alt="A penguin above the hill by Ian Parker."
+            />
+          </div>
+          <div id="item-2">
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209440135-dadf88ab-80b9-4e81-bed1-1f517e8f9286.jpg"
+              alt="Three penguins walking in a snowy field."
+            />
+          </div>
+          <div id="item-3">
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209615887-ddc95c73-03b1-4b72-b38f-5012c1f39ae6.jpg"
+              alt="A penguin swimming underwater by Atlas Kadrow."
+            />
+          </div>
+          <div id="item-4">
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209615905-1a2acc2d-a60a-4b3b-8aa2-0099f046a7cb.jpg"
+              alt="Horde of penguins by Martin Wettstein."
+            />
+          </div>
+          <div id="item-5">
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209615916-c1b01fe3-1848-4d28-a033-bce7697ac7dc.jpg"
+              alt="Penguin under the sum by Atlas Kadrow."
+            />
+          </div>
+        </div>
+      </section> -->
+
+      <section id="know-more">
+        <div><h2>Know More About My Recommendation</h2></div>
+        <div class="explanation">
+          <img class="photos-1" src="./assets/friends.jpeg" alt="" style="width: 250px" />
+          <div class="title-explanation">
+            <h3>Friends</h3>
+            <p>
+              "Friends" is a timeless and beloved American television sitcom that captivated audiences worldwide during its original run from 1994 to
+              2004 and continues to charm new generations through streaming services. This iconic series, created by David Crane and Marta Kauffman,
+              takes viewers on a journey into the lives of six inseparable friends living in the heart of New York City. With its winning blend of
+              humor, romance, and relatable everyday adventures, "Friends" has become a cultural phenomenon, leaving an indelible mark on the world of
+              television and earning a special place in the hearts of fans around the globe. This is the story of Rachel, Ross, Monica, Chandler,
+              Joey, and Phoebe—six friends who navigated life's ups and downs together, creating unforgettable moments, enduring laughter, and
+              redefining the meaning of friendship.
+            </p>
+            <p>
+              In the heart of Manhattan, we follow the lives of Rachel, Ross, Monica, Chandler, Joey, and Phoebe as they navigate the ups and downs of
+              careers, relationships, and the everyday adventures of adulthood. This group of friends exemplifies the essence of enduring friendships,
+              and their camaraderie has resonated with viewers of all ages for decades.
+            </p>
+            <hr />
+
+            <div>
+              <p>Cast:</p>
+              <p>Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer.</p>
+            </div>
+            <a class="btn btn-success" href="https://www.youtube.com/watch?v=IEEbUzffzrk&t=2s" target="_blank">Watch Trailer!</a>
+          </div>
+        </div>
+
+        <div class="explanation colorbg">
+          <img class="photos-1" src="./assets/modern family.webp" alt="" style="width: 250px" />
+          <div class="title-explanation">
+            <h3>Modern Family</h3>
+            <p>
+              "Modern Family" is a groundbreaking American television sitcom that graced screens from 2009 to 2020, offering a fresh and hilarious
+              take on the contemporary family dynamic. Created by Christopher Lloyd and Steven Levitan, this Emmy-award-winning series ingeniously
+              blends humor and heart to provide a unique perspective on what it means to be a part of a modern, extended family.
+            </p>
+            <p>
+              Through its witty storytelling and memorable characters, "Modern Family" explores the intricacies of parenting, marriage, cultural
+              diversity, and the ever-evolving definition of family in the 21st century. This endearing series has left an indelible mark on the world
+              of television, receiving both critical acclaim and a dedicated fan base, and it continues to be celebrated for its sharp wit and
+              heartfelt moments. Join us as we dive into the world of the Pritchett-Dunphy family and experience the laughter and love that make
+              "Modern Family" a modern classic.
+            </p>
+            <hr />
+            <div>
+              <p>Cast:</p>
+              <p>
+                Ed O'Neill, Sofía Vergara, Julie Bowen, Ty Burrell, Jesse Tyler Ferguson, Eric Stonestreet, Sarah Hyland, Ariel Winter, Nolan Gould,
+                Rico Rodriguez, Aubrey Anderson-Emmons, Jeremy Maguire, Reid Ewing.
+              </p>
+            </div>
+            <a class="btn btn-success" href="https://www.youtube.com/watch?v=Ub_lfN2VMIo" target="_blank">Watch Trailer!</a>
+          </div>
+        </div>
+
+        <div class="explanation">
+          <img class="photos-1" src="./assets/young sheldon.jpeg" alt="" style="width: 250px" />
+          <div class="title-explanation">
+            <h3>Young Sheldon</h3>
+            <p>
+              "Young Sheldon" is a charming and insightful American television sitcom that takes audiences back to the early years of one of
+              television's most iconic and beloved characters, Sheldon Cooper. A spin-off prequel of "The Big Bang Theory," this series offers a
+              unique look into the childhood of a child prodigy who would grow up to be one of the most memorable characters in the world of
+              television.
+            </p>
+            <p>
+              The show masterfully balances humor and heart as it delves into Sheldon's life, his relationships with his family, and the unique
+              challenges he faces as he embarks on his journey of self-discovery. "Young Sheldon" offers both a nostalgic glimpse into the past and a
+              fresh perspective on a beloved character, making it a must-watch for fans of "The Big Bang Theory" and newcomers alike. Join us as we
+              journey into the formative years of a young genius and experience the humor, quirks, and touching moments that shape the boy who would
+              one day become Sheldon Cooper.
+            </p>
+            <hr />
+            <div>
+              <p>Cast:</p>
+              <p>
+                Iain Armitage, Zoe Perry, Lance Barber, Montana Jordan, Raegan Revord, Jim Parsons, Annie Potts, Matt Hobby, Wyatt McClure, Emily
+                Osment.
+              </p>
+            </div>
+            <a class="btn btn-success" href="https://www.youtube.com/watch?v=FStMMcj-RiA" target="_blank">Watch Trailer!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="penguin-facts">
+        <h2>Facts about penguins</h2>
+        <div class="flex-container">
+          <ul>
+            <li>Penguins can swim</li>
+            <li>Penguins love to socialize</li>
+            <li>Penguin is the most gorgeous animal in the world!</li>
+          </ul>
+          <figure>
+            <img
+              src="https://user-images.githubusercontent.com/2970318/209440113-f43e969d-0ddd-4b38-917c-dd953ad1839b.jpg"
+              alt="A penguin swims under the deep sea."
+            />
+            <figcaption>Penguin <em>flies</em> underwater.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="section-video">
+        <h2>A baby cute penguin video!</h2>
+        <div class="flex-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/q3uXXh1sHcI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            display="block"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section> -->
+      <section id="section-video">
+        <div>
+          <div class="title-video">
+            <h2>Most watched series of all time!</h2>
+          </div>
+          <div class="content-video">
+            <iframe class="videonih" width="450px" height="315px" src="https://www.youtube.com/embed/KPLWWIOCOOQ"></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="form-section">
+        <h2>Join MovieConnect Club!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What your favorites genre film?</p>
+              <input id="cute" type="checkbox" name="personality" value="cute" />
+              <label for="cute">Horor</label>
+              <input id="adorable" type="checkbox" name="personality" value="adorable" />
+              <label for="adorable">Comedy</label>
+              <input id="beautiful" type="checkbox" name="personality" value="beautiful" />
+              <label for="beautiful">Thriller</label>
+              <input id="beautiful" type="checkbox" name="personality" value="beautiful" />
+              <label for="beautiful">Action</label>
+              <div><label for="otherGenre">Other Genres:</label> <input id="fullName" type="text" /></div>
+            </div>
+            <div>
+              <p>Upload your favorite movies here:</p>
+              <input type="file" id="photo" name="myPenguinPhoto" required accept="image/png, image/jpeg" />
+            </div>
+            <div>
+              <p>Tell us why you love that movies!</p>
+              <textarea rows="3"></textarea>
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
