@@ -418,4 +418,15 @@ button[type="submit"] {
     flex-direction: column;
     margin-bottom: 20px;
   }
+
+  nav {
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+  }
+
+  .mobile:hover {
+    background-color: #ddd;
+    color: black;
+  }
 }

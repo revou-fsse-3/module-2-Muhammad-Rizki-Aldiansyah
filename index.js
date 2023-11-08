@@ -32,3 +32,12 @@ function showSlides(n) {
 }
 const names = prompt("Kenalan yuk, nama kamu siapa?");
 alert(`Halo, ${names} selamat datang di MoviesConnect`);
+
+function myFunction() {
+  var x = document.getElementById(".mobile");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
