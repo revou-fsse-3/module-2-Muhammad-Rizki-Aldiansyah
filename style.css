@@ -35,6 +35,15 @@ p {
   padding: 8px;
 }
 
+.li-awards {
+  list-style: none;
+  padding: 10px 30px;
+  background-image: url(./assets/icons8-rocket.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
 .btn {
   border: #222222 solid 2px;
   background-color: #717171;
@@ -199,20 +208,31 @@ nav {
   position: fixed;
   z-index: 99;
   background-color: white;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
-  height: 52px;
+  height: 60px;
   border-bottom: 2px solid #222222;
 }
 
 nav > ul {
   margin-left: auto;
   margin-right: 16px;
+  list-style: none;
+}
+
+nav a:hover {
+  background-color: burlywood;
 }
 
 nav > ul > li {
   display: inline-block;
+  font-family: "poppins";
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
 }
 
 nav > span > img {
@@ -362,6 +382,10 @@ button[type="submit"] {
   transform: scale(1.05);
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 700px) {
   #know-more .explanation {
     flex-direction: column;
@@ -376,9 +400,16 @@ button[type="submit"] {
     align-items: center;
   }
 
+  .mobile {
+    display: block;
+  }
+
   .animate-character {
     font-size: 16px;
     padding: 10px;
+  }
+  .desktop {
+    display: none;
   }
 
   .column {
