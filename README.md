@@ -19,15 +19,15 @@
 
 - Set A configuration
   ![An old rock in the desert](./assets/Readmenih/WhatsApp%20Image%202023-11-14%20at%2002.32.17.jpeg "Shiprock, New Mexico by Beau Rogers")
-  > **DNS Configuration by vercell**
-  >
-  > 1. CNAME
-  >    > - Type: A
-  >    > - Name: www
-  >    > - Content: cname-vercel-dns.com
-  >    > - TTL: 14400
+  **DNS Configuration by vercell**
 
-> 2. A Configuration
+> 1.  CNAME
+>     > - Type: A
+>     > - Name: www
+>     > - Content: cname-vercel-dns.com
+>     > - TTL: 14400
+
+> 2. Configuration
 >    > - Type: A
 >    > - Name: @
 >    > - Content: 76.76.21.21
