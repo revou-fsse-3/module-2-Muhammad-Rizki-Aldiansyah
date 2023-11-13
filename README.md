@@ -1,4 +1,4 @@
-#Step by Step Setting DNS on Niagahoster and Deployment Vercel
+# Step by Step Setting DNS on Niagahoster and Deployment Vercel
 
 1. Register/Login Niagahoster Account
 
